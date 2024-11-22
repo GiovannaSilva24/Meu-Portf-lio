@@ -314,6 +314,38 @@
     text-transform: uppercase;
 }
 
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetos__titulo {
+    color: var(--branco);
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    justify-content: center;
+    margin: 100px 50px;
+}
+
+.projetos__lista {
+    color: var(--branco);
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px;
+    gap: 90px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+}
+
 .rodape {
     display: flex;
     justify-content: center;
