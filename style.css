@@ -401,62 +401,65 @@
     display: flex;
     justify-content: center;
    }
+   
     .formulario__contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 90px 0px 0px;
-    border: 2px solid var(--branco);
-    border-radius: 10px;
-    margin: 0px 500px;
+      background-color: var(--branco);
+      border-radius: 20px;
+      width: 600px;
+      height: 500px;
+      padding:0;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-direction: column;
+      
+  }
+  
     
-    }
-
-    input {
+    .formulario__contato input {
+      margin: 0px 10px;
+      width: 500px;
+      background-color: var(--cinza);
       margin: 10px 0px;
       padding: 10px 0px;
       border-radius: 10px;
-      border: 2px solid #ffffff;
+      border: 2px transparent var(--cinza-escuro);
       
     }
 
-    label {
-      margin: 10px 0px;
-      padding: 10px 0px;
-      color: var(--branco);
+    .formulario__contato input::placeholder {
+      color: var(--cor-de-fundo);
       font-family: var(--fonte-principal);
+      font-size: 15px;
       text-transform: uppercase;
       font-weight: 600;
-      font-size: 20px;
-      font-weight: 500;
     }
 
-    textarea {
-      margin: 10px 0px;
-      padding: 10px 0px;
-      border-radius: 10px;
-      border: 2px solid var(--branco);
-      font-family: var(--fonte-principal);
-      font-size: 20px;
-      font-weight: 500;
+    .formulario__mensagem {
+      display: flex;
+      margin: 0px;
+      height: 100px;
     }
+
 
     .botao__enviar {
       text-decoration: none;
       font-family: var(--fonte-principal);
       font-size: 15px;
       font-style: none;
-      color: #1f2020;
-      background-color: #ffffff;
+      color: var(--branco);
+      background-color: var(--cor-de-fundo);
       font-weight: 600;
+      margin: 40px 0px;
       border-radius: 10px;
       padding: 10px 20px;
     }
 
     .botao__enviar:hover {
-      background-color: var(--cor-de-fundo);
-      color: #ffffff;
+      background-color: var(--cinza);
+      color: var(--cor-de-fundo);
     }
 .rodape {
     display: flex;

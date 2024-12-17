@@ -137,25 +137,15 @@
     </section>
 
     <h3 class="formulario__titulo">Entre em Contato!</h3>
-   <div class="formulario">
-    <form class="formulario__contato">
-         <div class="campo">
-             <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required> 
-        </div> 
-        <div class="campo"> 
-            <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required> 
+    <div class="formulario">
+    <form class="formulario__contato" data-form>
+        <input data-name placeholder="nome..." type="text">
+        <input data-name placeholder="email..." type="text">
+        <input data-name placeholder="assunto..." type="text">
+        <input class="formulario__mensagem" data-name placeholder="mensagem..." type="text">
+            <button class="botao__enviar" id="botao">Enviar...</button>
         </div>
-         <div class="campo"> 
-            <label for="assunto">Assunto:</label> 
-            <input type="text" id="assunto" name="assunto" required>
-        </div> <div class="campo"> 
-            <label for="mensagem">Mensagem:</label> 
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-        </div> <button type="submit" class="botao__enviar">Enviar</button> 
     </form>
-</div>
 
 
   <footer class="rodape">
